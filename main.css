@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+}
+.main {
+    width: 500px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #efd43b;
+    z-index: 1;
+}
+.checkoutform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.checkout-title {
+    display: flex;
+
+}
+.checkout-title div:nth-child(1){
+    position:absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.checkout-title div:nth-child(2){
+    margin: 20px 20px;
+    color: #929292;
+}
+.checkout-content{
+    margin: 30px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.checkout-content p:nth-child(1){
+    font-size: 25px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.checkout-content p:nth-child(2){
+    font-size: 40px;
+    position: relative;
+    font-weight: 400;
+}
+.checkout-content span{
+    font-size: 17px;
+    position: absolute;
+    bottom: 3px;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: -20px;
+    z-index: 2;
+}
+.tab-item.active{
+    border: 2px solid
+}
+button.btn {
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    box-shadow: 2px 2px #a4a9ae;
+    margin: 0px 20px;
+    opacity: 1;
+    background-color: white !important;
+}
+button.paypal{
+    background-image: url("https://cdn.icon-icons.com/icons2/2699/PNG/512/paypal_logo_icon_170865.png");
+    background-size: 100% 100%;
+}
+button.visa{
+    background-image: url("https://admin.money24h.vn/wp-content/uploads/2021/07/v-and-AM.jpeg");
+    background-size: 100% 100%;
+}
+button.btn:hover{
+    opacity: 1;
+}
+.form{
+    padding: 10px 25px;
+}
+.visa,.paypal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tab-pane{
+    display: none;
+}
+.tab-pane.active{
+    display: block;
+}
+.form-group{
+    width: 100%;
+    margin: 10px 0 15px;
+}
+.form-group:nth-child(2){
+    width: 50%;
+
+}
+.form-group:nth-child(3){
+    width: 40%;
+}
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+.form-submit {
+    outline: none;
+    background-color: #ed4b42;
+    margin-top: 20px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 40%;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.form-submit:hover {
+    opacity: 0.7;
+}
